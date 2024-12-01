@@ -1,0 +1,162 @@
+
+/* Container for the page content */
+.container {
+    padding: 20px;
+    background-color: #f5f8fa; /* Light gray background */
+    position: relative;
+    max-width: 1200px; /* Increased max width */
+    margin: 0 auto; /* Center the container */
+    padding-top: 0; /* Remove top padding */
+}
+
+/* Header section with navigation and control buttons */
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px; /* Reduced bottom margin */
+    background-color: white; /* White background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+}
+
+/* Navigation buttons (tabs) container */
+.nav-buttons {
+    display: flex;
+}
+
+/* Styling for individual navigation buttons (tabs) */
+.nav-button {
+    background: white !important; /* Force white background */
+    border: none !important; /* Remove any borders */
+    color: #333 !important; /* Darker gray text color */
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Explicitly remove focus, hover, and active states */
+.nav-button:focus, .nav-button:active, .nav-button:hover {
+    background-color: white !important; /* Force white background on hover, active, and focus */
+    color: #333 !important; /* Ensure text remains gray */
+    box-shadow: none !important; /* Remove shadow on hover, active, and focus */
+    border: none !important; /* Ensure no border */
+    outline: none !important; /* Remove focus outline */
+}
+
+/* Remove hover color change */
+.nav-button:hover {
+    background-color: white !important;
+}
+
+/* Active tab styling */
+.nav-button.active {
+    background: white !important; /* Force white background */
+    box-shadow: none !important; /* Remove shadow */
+    color: #333 !important; /* Ensure text remains gray */
+}
+
+/* Filter and sort buttons container */
+.filter-sort {
+    display: flex; 
+}
+
+/* Styling for filter and sort buttons */
+.filter-button, .sort-button {
+    background-color: white !important; /* White background for buttons */
+    border: none !important; /* No border */
+    color: black !important; /* Black text */
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Explicitly remove focus, hover, and active states for filter and sort buttons */
+.filter-button:focus, .filter-button:active, .filter-button:hover,
+.sort-button:focus, .sort-button:active, .sort-button:hover {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none !important; /* Remove shadow */
+    border: none !important;
+    outline: none !important;
+}
+
+/* Cards container for the metrics */
+.cards-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; /* Align items to the start */
+    margin-top: 10px; /* Reduced top margin */
+}
+
+/* Individual card styling */
+.card {
+    background: white;
+    border-radius: 8px; 
+    padding: 10px; /* Reduced padding */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    flex: 1 1 150px; /* Adjusted flex basis */
+    max-width: 200px; /* Reduced max width */
+    height: 150px; /* Reduced height */
+}
+
+/* Metric styling inside each card */
+.metric {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    color: black;
+}
+
+/* Metric value styling (large text) */
+.metric-value {
+    font-size: 32px; 
+    font-weight: bold; 
+    color: black;
+}
+
+/* Metric change indicator (positive/negative growth) */
+.metric-change {
+    font-size: 14px; 
+    color: green;
+}
+
+/* Breadcrumbs styling */
+.breadcrumbs {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs > span {
+    margin: 0 5px;
+}
+
+/* Search bar styling */
+.search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 300px;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+}
